@@ -1,0 +1,18 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Data files (not to be shared publicly)
+data/*.csv
+data/*.xlsx
+data/*.json
+data/*.rds
+
+# Output (optional - remove if you want to track outputs)
+# output/
+
+# OS files
+.DS_Store
+Thumbs.db
