@@ -12,6 +12,22 @@ This work builds on and extends the PhD research of **Sawood Anwar** (University
 
 ---
 
+## 🔗 Related Projects
+
+| Repository | Description |
+|---|---|
+| 🦠 [facebook-reactions-covid19-india](https://github.com/sawoodanwar/facebook-reactions-covid19-india) | PhD thesis project |
+| ⏱️ [timeseries-facebook-engagement-r](https://github.com/sawoodanwar/timeseries-facebook-engagement-r) | Time-series toolkit: general, COVID-19 extension & misinfo spike detection |
+| 🧠 [stm-social-media-r](https://github.com/sawoodanwar/stm-social-media-r) | STM topic modeling toolkit |
+| 💬 [sentiment-lexicon-comparison](https://github.com/sawoodanwar/sentiment-lexicon-comparison) | AFINN, Bing, NRC lexicon comparison |
+| 🗳️ [reddit-political-misinfo-coding](https://github.com/sawoodanwar/reddit-political-misinfo-coding) | Reddit political communication manual coding |
+| 🔄 [cross-platform-engagement-analysis](https://github.com/sawoodanwar/cross-platform-engagement-analysis) | Unified cross-platform engagement framework |
+| 🔴 [disinformation-detection-ml](https://github.com/sawoodanwar/disinformation-detection-ml) | ML classifier for disinformation detection |
+| 🟣 [nlp-news-classification-r](https://github.com/sawoodanwar/nlp-news-classification-r) | Supervised NLP news classification |
+| 🟢 [crowdtangle-meta-api-workflow](https://github.com/sawoodanwar/crowdtangle-meta-api-workflow) | Academic data collection pipeline |
+
+---
+
 ## Research Objectives
 
 - Examine how health-related misinformation spreads across Facebook and Instagram
@@ -29,16 +45,16 @@ This work builds on and extends the PhD research of **Sawood Anwar** (University
 | Instagram | Public posts | Captions, comments, likes |
 | Comments | Facebook & Instagram | User-generated responses |
 
-> ⚠️ Raw data files are not included in this repository due to platform Terms of Service and privacy considerations. See `data/README.md` for data collection instructions.
+> ⚠️ Raw data files are not included due to platform Terms of Service and privacy considerations.
 
 ---
 
 ## Methodology
 
 1. **Data Collection** — CrowdTangle / Meta Content Library API
-2. **Preprocessing** — Text cleaning, tokenization, stopword removal (R: `tidytext`, `quanteda`)
-3. **Topic Modeling** — Structural Topic Model (STM) with covariates for platform and time
-4. **Engagement Analysis** — Descriptive statistics and time-series analysis of reaction/comment metrics
+2. **Preprocessing** — Text cleaning, tokenization, stopword removal (`tidytext`, `quanteda`)
+3. **Topic Modeling** — Structural Topic Model (STM) with platform and time covariates
+4. **Engagement Analysis** — Descriptive statistics and time-series analysis
 5. **Misinformation Coding** — Manual + automated labeling for health misinformation categories
 
 ---
@@ -47,16 +63,15 @@ This work builds on and extends the PhD research of **Sawood Anwar** (University
 
 ```
 meta-content-analysis/
-├── data/
-│   └── README.md              # Data access and collection instructions
+├── data/README.md
 ├── scripts/
-│   ├── 01_preprocessing.R     # Text cleaning and preparation
-│   ├── 02_topic_modeling.R    # STM topic modeling workflow
-│   ├── 03_engagement.R        # Engagement metrics analysis
-│   └── 04_visualization.R     # Plots and output figures
-├── output/
-│   ├── figures/               # Exported charts and visualizations
-│   └── tables/                # Summary statistics and topic labels
+│   ├── 01_preprocessing.R
+│   ├── 02_topic_modeling.R
+│   ├── 03_engagement.R
+│   └── 04_visualization.R
+├── output/figures/
+├── output/tables/
+├── .gitignore
 ├── README.md
 └── LICENSE
 ```
@@ -65,33 +80,24 @@ meta-content-analysis/
 
 ## Requirements
 
-All analysis is conducted in **R**. Key packages:
-
 ```r
-install.packages(c(
-  "tidyverse",
-  "tidytext",
-  "quanteda",
-  "stm",
-  "topicmodels",
-  "ggplot2",
-  "lubridate",
-  "jsonlite"
-))
+install.packages(c("tidyverse", "tidytext", "quanteda", "stm", "topicmodels",
+                   "ggplot2", "lubridate", "jsonlite"))
 ```
 
 ---
 
 ## Author
 
-**Sawood Anwar**  
-Ph.D. in Humanities (Text and Communication Sciences)  
-University of Urbino Carlo Bo, Italy  
-Specialization: Computational Communication, NLP, Social Media Analysis  
-GitHub: [@sawoodanwar](https://github.com/sawoodanwar)
+**Sawood Anwar** — PhD in Humanities (Text and Communication Sciences), defended 22 September 2025
+University of Urbino Carlo Bo | Supervisor: Prof. Fabio Giglietto | Co-Supervisor: Prof. Giovanni Boccia Artieri
+
+- 🔗 [GitHub](https://github.com/sawoodanwar) | 💼 [LinkedIn](https://www.linkedin.com/in/sawood-anwar/) | 🎓 [Google Scholar](https://scholar.google.com/citations?hl=en&user=GgsMu3sAAAAJ)
 
 ---
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+MIT License. See [LICENSE](LICENSE).
+
+*Keywords: Meta Platforms, Facebook, Instagram, Health Communication, Misinformation, STM, Topic Modeling, Engagement Analysis, R, Computational Communication*
